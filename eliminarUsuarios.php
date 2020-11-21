@@ -14,8 +14,8 @@
     //5. Ejecute el metodo eliminarUsuario
     $transaccion->eliminarDatos($consultaSQL);
 
-
-
+    //6. Redireccion a la vista que necesita 
+    header("location:listadoUsuarios.php");
 
 
 ?>

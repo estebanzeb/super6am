@@ -9,7 +9,7 @@
         $apellido=$_POST["apellido"];
         $descripcion=$_POST["descripcion"];
         $genero=$_POST["genero"];
-        $foto=$_POST["foto"]:
+        $foto=$_POST["foto"];
 
         //2. crear una copia de la clase BD
         //crear un objeto de la clase bd
@@ -20,7 +20,9 @@
 
         //4. Utilizar el metodo agregarDatos()
         $transaccion->agregarDatos($consultaSQL);
-               
+        
+        //5. Redireccion a la vista que necesita 
+        header("location:listadoUsuarios.php");
     }
 
 ?>
